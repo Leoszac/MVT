@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+
+{% block titulo %}
+Buscar Vehiculos
+{% endblock%}
+
+{% block contenido %}
+    <form action="/mi-familia/buscar" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit">
+    </form>
+    
+    {% for vehiculo in vehiculos %}
+    <ul>
+        <li>{{ vehiculo.marca }},{{ vehiculo.modelo }},{{ vehiculo.fecha_compra }},{{ vehiculo.kilometraje }} </li>
+    </ul>
+    {% endfor %}
+    
+{% endblock %}

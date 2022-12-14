@@ -1,0 +1,11 @@
+{% extends "index.html" %}
+
+{% block contenido%}
+<div>
+    <ul>    
+        {% for mascota in mascotas %}
+        <li>{{ mascota.nombre }},{{ mascota.edad }} </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+
+{%block titulo %}
+Lista de familiares
+{% endblock %}
+{%block contenido%}
+    <a href="/mi-familia/alta">Nuevo Vehiculo</a>
+    <ul>
+    {% for vehiculo in vehiculos %}
+        <li>
+            Marca: {{vehiculo.marca}}, Modelo: {{vehiculo.direccion}}, Fecha de Compra: {{vehiculo.fecha_compra}}, Kilometraje: {{vehiculo.kilometraje}}
+            <a href="/mi-familia/actualizar/{{ vechiulo.id }}">Actulizar</a>
+            <a href="/mi-familia/borrar/{{ vehiculo.id }}">Borrar</a>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}
