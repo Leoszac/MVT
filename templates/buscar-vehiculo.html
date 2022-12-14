@@ -5,7 +5,7 @@ Buscar Vehiculos
 {% endblock%}
 
 {% block contenido %}
-    <form action="/mi-familia/buscar" method="post">
+    <form action="/mi-vehiculo/buscar" method="post">
         {% csrf_token %}
         {{ form }}
         <input type="submit" value="Submit">

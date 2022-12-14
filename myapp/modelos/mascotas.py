@@ -2,6 +2,7 @@ from django.db import models
 import datetime
 
 class Mascota(models.Model):
+    id = models.AutoField(primary_key=True, unique=True)
     nombre = models.CharField(max_length=100)
     edad = models.IntegerField(null=False)
 
