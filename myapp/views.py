@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
-from myapp.modelos import Familiar, Mascota, Vehiculo
-from formularios.forms import BuscarMascotaForm, BuscarPersonasForm, BuscarVehiculoForm, PersonaForm, VehiculoForm, MascotaForm, ActualizarMascotaForm, ActualizarPersonaForm, ActualizarVehiculoForm
+from .models import Familiar, Mascota, Vehiculo
+from .forms import BuscarMascotaForm, BuscarPersonasForm, BuscarVehiculoForm, PersonaForm, VehiculoForm, MascotaForm, ActualizarMascotaForm, ActualizarPersonaForm, ActualizarVehiculoForm
 import datetime
 from django.views import View
 

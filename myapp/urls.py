@@ -1,5 +1,5 @@
 from django.urls import path
-from myapp.vistas.views import Familiar_view, Mascota_view, Vehiculo_view, BuscarFamiliar, ActualizarFamiliar, BorrarFamiliar, BuscarVehiculo, BuscarMascota, ActualizarVehiculo, BorrarVehiculo, ActualizarMascota, BorrarMascota
+from myapp.views import Familiar_view, Mascota_view, Vehiculo_view, BuscarFamiliar, ActualizarFamiliar, BorrarFamiliar, BuscarVehiculo, BuscarMascota, ActualizarVehiculo, BorrarVehiculo, ActualizarMascota, BorrarMascota
 
 
 urlpatterns = [
