@@ -48,9 +48,9 @@ def nuevo_taller(request):
          
          formulario_ND_limpio = formulario_ND.cleaned_data
          
-         nuevo_profesor = escuela(deporte=formulario_ND_limpio['taller'], nombre=formulario_ND_limpio['nombre'])
+         nuevo_taller = escuela(taller=formulario_ND_limpio['taller'])
          
-         nuevo_profesor.save()
+         nuevo_taller.save()
          
          return render(request, 'index.html')
 
