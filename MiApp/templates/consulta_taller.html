@@ -1,0 +1,20 @@
+<form action="" method="GET"> 
+
+
+    <p>         consulta info. Talleres                </p>
+   
+  <input type='text' name='taller' id='taller'>>
+  <input type='submit' value='enviar'></button> 
+</form>
+
+{% if  escuela %}
+
+   <ul>
+    <li> Taller a cargo del profesor {{escuela.nombre}} </li>
+   </ul>
+{% endif %}
+
+{% if error %}
+    <p>{{error}}</p>
+{% endif %}
+
