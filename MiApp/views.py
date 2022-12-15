@@ -87,7 +87,7 @@ def nuevo_alumno(request):
          
          formulario_NA_limpio = formulario_NA.cleaned_data
          
-         nuevo_alumno = alumno(deporte=formulario_NA_limpio['taller'], nombre=formulario_NA_limpio['nombre'], DNI=formulario_NA_limpio['DNI'])
+         nuevo_alumno = alumno(taller=formulario_NA_limpio['taller'], nombre=formulario_NA_limpio['nombre'], DNI=formulario_NA_limpio['DNI'])
          
          nuevo_alumno.save()
          
