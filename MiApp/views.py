@@ -38,8 +38,6 @@ def buscar_escuela(request):
    return render(request, 'consulta_taller.html', {'error':error})
 
 
-
-
 ######### INGRESOS DE TALLER ##########
 def nuevo_taller(request):
    if request.method == 'POST':
@@ -58,8 +56,7 @@ def nuevo_taller(request):
 
    else:
       formulario_ND = escuelaForm()
-      
-   return render(request, 'nuevo_taller.html', {'formulario_ND': formulario_ND})
+      return render(request, 'nuevo_taller.html', {'formulario_ND': formulario_ND})
 
 ######### INGRESOS DE PROFESORES ##########
 def nuevo_profesor(request):
@@ -80,7 +77,7 @@ def nuevo_profesor(request):
    else:
       formulario_NP = profesorForm()
       
-   return render(request, 'nuevo_profesor.html', {'formulario_NP': formulario_NP})
+      return render(request, 'nuevo_profesor.html', {'formulario_NP': formulario_NP})
 
 ######### INGRESOS DE ALUMNOSS ##########
 def nuevo_alumno(request):
@@ -101,7 +98,7 @@ def nuevo_alumno(request):
    else:
       formulario_NA = alumnoForm()
       
-   return render(request, 'nuevo_alumno.html', {'formulario_NA': formulario_NA})
+      return render(request, 'nuevo_alumno.html', {'formulario_NA': formulario_NA})
 
 
 
