@@ -67,7 +67,7 @@ def nuevo_profesor(request):
          
          formulario_NP_limpio = formulario_NP.cleaned_data
          
-         nuevo_profesor = profesor(nombre=formulario_NP_limpio['nombre'], DNI=formulario_NP_limpio['DNI'], taller=formulario_NP_limpio['deporte'])
+         nuevo_profesor = profesor(nombre=formulario_NP_limpio['nombre'], DNI=formulario_NP_limpio['DNI'], taller=formulario_NP_limpio['taller'])
          
          nuevo_profesor.save()
          
