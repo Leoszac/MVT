@@ -98,11 +98,14 @@ def nuevo_alumno(request):
       
       return render(request, 'nuevo_alumno.html', {'formulario_NA': formulario_NA})
 
+######### Mostrar  ##########
 
+def mostrar_profesor(request):
+  lista_profesores = profesor.objects.all()
+  return render(request, "ver_todo.html", {"lista_profesores": lista_profesores})
 
-#consulta_profesor = profesor(deporte=['deporte'], nombre=['nombre'], DNI=['DNI'])
-   
-#  return render(request, 'consulta_profesor.html' ,{'profesor':[consulta_profesor]})
+######### Actualizar  ##########
+
 
 
       

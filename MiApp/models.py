@@ -8,6 +8,9 @@ class profesor(models.Model):
     taller = models.CharField(max_length = 100)
     DNI = models.IntegerField()
 
+    def __str__(self):
+      return f"{self.nombre}, {self.taller}, {self.DNI}"
+
 
 class alumno(models.Model):
     taller = models.CharField(max_length = 100)

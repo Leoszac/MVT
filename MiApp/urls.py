@@ -1,5 +1,5 @@
 from django.urls import path
-from MiApp.views import index, nuevo_taller, nuevo_profesor, nuevo_alumno, buscar_profesor, buscar_escuela
+from MiApp.views import index, nuevo_taller, nuevo_profesor, nuevo_alumno, buscar_profesor, buscar_escuela,mostrar_profesor
 from .forms import escuelaForm, profesorForm, alumnoForm
 
 
@@ -12,4 +12,6 @@ urlpatterns = [
     path('buscar_profesor/', buscar_profesor),
     path('escuelaForm/', escuelaForm),
     path('profesorForm/', profesorForm),
-    path('alumnoForm/', alumnoForm),]
+    path('alumnoForm/', alumnoForm),
+    path('ver_profesor', mostrar_profesor),]    
+

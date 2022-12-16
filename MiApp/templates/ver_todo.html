@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{%block titulo %}
+Lista de profesores
+{% endblock %}
+{%block contenido%}
+     <ul>
+    {% for profesor in lista_profesores %}
+        <li>
+            Id: {{profesor.id}} Nombre: {{profesor.nombre}}, taller: {{profesor.taller}}, DNI: {{profesor.DNI}}
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}
