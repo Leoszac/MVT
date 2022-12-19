@@ -1,13 +1,22 @@
 {% extends 'index.html' %}
 
-{%block titulo %}
+{% block titulo %}
 Lista de profesores
 {% endblock %}
-{%block contenido%}
+{% block codigoDinamico %}
+<h2>Listado de profesores</h2>
      <ul>
     {% for profesor in lista_profesores %}
         <li>
             Id: {{profesor.id}} Nombre: {{profesor.nombre}}, taller: {{profesor.taller}}, DNI: {{profesor.DNI}}
+        </li>
+    {% endfor %}
+    </ul>
+<h2>Listado de talleres</h2>
+<ul>
+    {% for taller in lista_talleres %}
+        <li>
+            Id: {{taller.id}} taller: {{taller.taller}}
         </li>
     {% endfor %}
     </ul>

@@ -101,8 +101,10 @@ def nuevo_alumno(request):
 ######### Mostrar  ##########
 
 def mostrar_profesor(request):
-  lista_profesores = profesor.objects.all()
-  return render(request, "ver_todo.html", {"lista_profesores": lista_profesores})
+  lista_profesores = profesor.objects.all()  
+  lista_talleres= escuela.objects.all()
+
+  return render(request, "ver_todo.html", {"lista_profesores": lista_profesores, "lista_talleres": lista_talleres})
 
 ######### Actualizar  ##########
 

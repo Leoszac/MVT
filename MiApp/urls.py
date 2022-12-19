@@ -13,5 +13,7 @@ urlpatterns = [
     path('escuelaForm/', escuelaForm),
     path('profesorForm/', profesorForm),
     path('alumnoForm/', alumnoForm),
-    path('ver_profesor', mostrar_profesor),]    
+    path('ver_profesor/', mostrar_profesor),  
+    ]   
+
 
